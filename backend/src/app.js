@@ -3,6 +3,7 @@ const router = require('./router')
 
 const app = express();
 
-app.use(router)
+app.use(express.json());
+app.use(router);
 
 module.exports = app; 
